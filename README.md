@@ -5,10 +5,9 @@
 stephanie@stephanie:~/challenge-aws$ tree
 .
 ├── modules
-│   ├── nat-route.tf
 │   └── network
 │       ├── gateway.tf
-│       ├── internet.tf
+│       ├── nat-route.tf
 │       ├── output.tf
 │       ├── privete.tf
 │       ├── public.tf
@@ -18,8 +17,6 @@ stephanie@stephanie:~/challenge-aws$ tree
 ├── output.tf
 ├── prodiver.tf
 ├── README.md
-├── terraform.tfstate
-├── terraform.tfstate.backup
 └── variables.tf
 # 2 directories, 15 files
 
