@@ -5,7 +5,10 @@
 stephanie@stephanie:~/challenge-aws$ tree
 .
 ├── modules
+│   ├── nat-route.tf
 │   └── network
+│       ├── gateway.tf
+│       ├── internet.tf
 │       ├── output.tf
 │       ├── privete.tf
 │       ├── public.tf
@@ -14,9 +17,16 @@ stephanie@stephanie:~/challenge-aws$ tree
 ├── modules.tf
 ├── output.tf
 ├── prodiver.tf
+├── README.md
+├── terraform.tfstate
+├── terraform.tfstate.backup
 └── variables.tf
+# 2 directories, 15 files
 
 Provedor: AWS
+Configurado por o usuário da máquina- ACCESS_KEY_ID, SECRET_ACCESS_KEY, REGION e OUTPUT FORMAT: aws configure 
+Output Format: json
 Região: us-east-1
 Nome do Cluster: eks-challenge
 Subnet: Privada e Pública
+
