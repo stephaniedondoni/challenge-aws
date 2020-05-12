@@ -1,4 +1,3 @@
-
 resource "aws_eip" "vpc_iep" {
   vpc = true
   
@@ -8,9 +7,8 @@ resource "aws_eip" "vpc_iep" {
 }
 
 resource "aws_nat_gateway" "nat" {
-
-    allocation_id = aws_eip.vpc_iep.allocation_id
-    subnet_id     = aws_subnet.public_subnet_1a.id 
+    allocation_id   = aws_eip.vpc_iep.id
+    subnet_id       = aws_subnet.public_subnet_1a.id
 
     tags = {
       Name = format("%s-nat-route", var.cluster_name)
